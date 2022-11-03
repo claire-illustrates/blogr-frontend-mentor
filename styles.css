@@ -1,0 +1,487 @@
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Positioning  */
+
+.designed-heading, .phone-illustration {
+  position: absolute;
+}
+
+.illustration-editor-desktop, .state-of-the-art, .laptop-illustration-desktop {
+  position: relative;
+}
+/* Flexbox */
+
+.welcome-section, .call-to-action, .designed-for-future, .text-column-left, .state-of-the-art, .purple-section-text-div, .final-section, .footer, .footer-column {
+  display: flex;
+}
+
+.welcome-section, .call-to-action, .text-column-left, .purple-section-text-div, .footer-column {
+  flex-direction: column;
+}
+
+.designed-for-future , .final-section {
+  align-items: center;
+}
+
+/* Widths */
+
+.nav-button, .phone-illustration {
+  width: 30%;
+}
+
+.text-column-left, .purple-section-text-div {
+  width: 40%;
+}
+
+.laptop-illustration-desktop, .final-section-text {
+  width: 50%;
+}
+
+/* Colors */
+
+.sub-heading, .designed-heading{
+  color: #1f3f5b;
+}
+
+.start-button, .signup-button {
+  color: #ff525d;
+}
+
+.nav-link, .nav-link:hover, .nav-link:focus, .nav-button:hover, .login-button, .welcome-section, .state-of-the-art, .footer, .footer a, .attribution a {
+  color: #fff;
+}
+.sub-heading, .white-section-body-text, .purple-section-heading {
+  margin-bottom: 5%;
+}
+
+.purple-section-heading, .designed-heading {
+  font-size: 2.5rem;
+}
+
+/* White Sections */
+
+.white-section-body-text {
+  color: #4b5862;
+  font-weight: 300;
+  width: 90%;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: transparent;
+  padding: 30px 50px;
+}
+
+.navbar-brand {
+  margin-right: 40px;
+}
+
+.navbar-toggler, .nav-button:hover {
+  border: none;
+}
+
+.nav-link {
+  margin-right: 20px;
+}
+
+.nav-link:hover, .nav-link:focus {
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+  padding: 20px;
+}
+
+.dropdown-item:hover {
+  background-color: #fff;
+  font-weight: 500;
+}
+
+.nav-buttons {
+  justify-content: flex-end;
+  width: 30%;
+}
+
+.nav-button {
+  border-radius: 50px;
+}
+
+.nav-button:hover {
+  background-color: #ff7a85;
+}
+
+.signup-button {
+  background-color: #fff;
+  margin-left: 10px;
+}
+
+/* Welcome Section */
+
+.welcome-section {
+  background-image: url(images/bg-pattern-complete-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 0 100px;
+  height: 90vh;
+  text-align: center;
+}
+
+.call-to-action {
+  margin: auto;
+}
+
+.call-to-action-heading {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  margin-bottom: 1%;
+}
+
+.call-to-action-text {
+  font-size: 1.5rem;
+  margin-bottom: 2%;
+}
+
+.call-to-action-buttons {
+  border-radius: 20px;
+  margin-left: 10px;
+  width: 8%;
+}
+
+/* Designed for the Future Section  */
+
+.designed-for-future {
+  justify-content: center;
+  padding: 5%;
+}
+
+.designed-heading {
+  left: 40%;
+  bottom:-10%;
+}
+
+.text-column-left {
+  justify-content: flex-start;
+  margin:0 auto 5%;
+}
+
+.illustration-editor-desktop {
+  left: 7% ;
+  width: 45%;
+}
+
+.illustration-editor-mobile {
+  display: none;
+}
+
+/* State of the Art Infastructure Section */
+
+.state-of-the-art {
+  background: url(images/bg-pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 0 100px 0 100px;
+  height: 50vh;
+}
+
+.phone-illustration {
+  top: -20%;
+  left: 10%;
+}
+
+/* Purple Section */
+
+.purple-section-text-div {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 10%;
+}
+
+.purple-section-body-text {
+  opacity: 0.5;
+  width: 75%;
+}
+
+/* Final Section */
+
+.final-section {
+  padding: 7% 5%;
+}
+
+.laptop-illustration-desktop {
+  right: 6.5%;
+}
+
+.laptop-illustration-mobile {
+  display: none;
+}
+
+.final-section-text {
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #25252d;
+  border-radius: 0 100px 0 0;
+  justify-content: space-around;
+  padding: 5%;
+}
+
+.footer a {
+  text-decoration: none;
+  opacity: 0.75;
+  margin-bottom: 4%;
+}
+
+.footer-heading {
+  margin-bottom: 10%;
+}
+
+.attribution {
+  background-color: #3f4164;
+  padding: 1%;
+}
+
+.attribution a {
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width:600px) {
+
+  .nav-buttons, .designed-for-future, .state-of-the-art, .final-section, .footer {
+    flex-direction: column;
+  }
+
+  .navbar-collapse, .dropdown-menu, .designed-for-future, .state-of-the-art, .final-section-text, .footer {
+    text-align: center;
+  }
+
+  /* Font Sizes */
+
+  .sub-heading, .designed-heading {
+    font-size: 2.1rem;
+  }
+
+  .white-section-body-text, .purple-section-body-text, .dropdown-item {
+    font-size: 1.2rem;
+  }
+
+  .nav-link, .nav-button, .call-to-action-text {
+    font-size: 1.5rem;
+  }
+
+  /* Margins */
+
+  .dropdown-item, .laptop-illustration-mobile, .footer-heading, .dropdown{
+    margin-bottom: 5%;
+  }
+
+  .purple-section-body-text, .nav-link, .final-section-text {
+    margin: 0 auto;
+  }
+
+  .sub-heading, .call-to-action-heading {
+    margin: 5% auto;
+  }
+
+  .white-section-body-text, .nav-button {
+    margin: 0 auto 10%;
+  }
+
+  /* Widths */
+
+  .purple-section-text-div, .nav-buttons, .call-to-action-heading, .call-to-action-text, .illustration-editor-mobile, .text-column-left, .phone-illustration {
+    width: 100%;
+  }
+
+  .navbar-collapse, .call-to-action, .final-section-text {
+    width: 90%;
+  }
+
+  .sub-heading {
+    width: 80%;
+  }
+
+  /* Purple Section */
+
+  .purple-section-text-div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .purple-section-heading {
+    font-size: 2.6rem;
+    margin-top: 30%;
+  }
+
+  /* Navbar */
+
+  .navbar-collapse {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 8%;
+    position: absolute;
+    right: 1.5rem;
+    top: 6rem;
+    z-index: 1;
+  }
+
+  .close-menu-icon {
+    display: none;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 0;
+  }
+
+  .nav-link, .login-button {
+    color: #1f3f5b;
+  }
+
+  .nav-link:hover, .nav-link:focus, .dropdown-item {
+    color: #4b5862;
+  }
+
+  .nav-link.dropdown-toggle {
+    text-decoration: none;
+  }
+
+  .dropdown-menu {
+    background-color: #EFEFF1;
+    border: none;
+  }
+
+  .dropdown-toggle::after {
+    color: #ff525d;
+  }
+
+  .nav-button {
+    width: 40%;
+  }
+
+  hr {
+    color: #c8c8cb;
+    opacity: 1;
+  }
+
+  .login-button {
+    margin-top: 5%;
+  }
+
+  .signup-button {
+    background-image: linear-gradient(to right, #ff8f70, #ff3d54);
+    color: #fff;
+  }
+
+  /* Welcome Section */
+
+  .welcome-section {
+    align-items: center;
+    background: url(images/bg-pattern-mobile-complete.svg);
+    background-size: cover;
+  }
+
+  .call-to-action {
+    margin: 20% auto;
+  }
+
+  .call-to-action-heading {
+    font-size: 3.1rem;
+  }
+
+  .call-to-action-text {
+    margin: 0 auto 10%;
+  }
+
+  .call-to-action-buttons {
+    border-radius: 30px;
+    padding: 2.5%;
+    width: 35%;
+  }
+
+  /* Designed for the Future Section */
+
+  .designed-for-future {
+    margin-bottom: 60%;
+  }
+
+  .designed-heading {
+    margin: 15% auto;
+    position: static;
+  }
+
+  .illustration-editor-desktop {
+    display: none;
+  }
+
+  .illustration-editor-mobile {
+    display: block;
+    margin-bottom: 15%;
+    order: 1;
+  }
+
+  .text-column-left {
+    order: 2;
+  }
+
+  /* State of the art Infastructure Section */
+
+  .state-of-the-art {
+    background-position: 2% -50%;
+    height: 90vh;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+
+  .phone-illustration {
+    left: -.75%;
+    top: -30%;
+  }
+
+
+  /* Final Section */
+
+  .laptop-illustration-desktop {
+    display: none;
+  }
+
+  .laptop-illustration-mobile {
+    display: block;
+  }
+
+  .footer {
+    height: auto;
+    padding: 70px 50px;
+  }
+
+  .logo {
+    margin-bottom: 10%;
+  }
+
+  .footer-heading {
+    margin-top: 8%;
+  }
+
+  .footer a {
+    font-size: 1.1rem;
+    margin-bottom: 2%;
+  }
+}
